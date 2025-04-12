@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cenas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #2e7d32;
+    }
+
+    .price-list, .package-section {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+    }
+
+    .price-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .price-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #ccc;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+    }
+
+    .price-list li span {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .package-section h2 {
+      margin-top: 3rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #2e7d32;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="price-list">
+    <h2>💸 Aptuvenās cenas 💸</h2>
+    <ul>
+      <li>🧹 Datoru tīrīšana <span>15€</span></li>
+      <li>🦠 Vīrusu noņemšana <span>10€</span></li>
+      <li>🧑‍💻 Operētājsistēmas uzstādīšana <span>25€</span></li>
+      <li>⚙️ Programmu uzstādīšana un konfigurēšana <span>10€</span></li>
+      <li>🛒 Konsultācijas par komponentēm un iegādi <span>10€</span></li>
+    </ul>
+  </section>
+
+  <section class="package-section">
+    <h2>🛠️ Datoru komplektēšana 🛠️</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="emoji">🥉</div>
+        <div class="title">Pamata komplektēšana</div>
+        <div class="desc">(jau izvēlētas detaļas, tikai salikšana)</div>
+        <div class="price">30€</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🥈</div>
+        <div class="title">Komplekts + uzstādīšana</div>
+        <div class="desc">(OS, draiveri, stress tests)</div>
+        <div class="price">50€</div>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🥇</div>
+        <div class="title">Premium</div>
+        <div class="desc">(iekļauta detaļu piemeklēšana, konsultācijas, uzstādīšana)</div>
+        <div class="price">70€</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
